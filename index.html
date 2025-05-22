@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jpanda and Friends</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #003366);
+      color: #ffa500;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #ffffff15;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #93c572;
+      margin-bottom: 20px;
+    }
+
+    .aesthetic {
+      color: #ffde21; 
+    }
+  </style>
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Majo</a>
-      <a href=" /page3.html">Jp</a>
-      <a href=" /page4.html">Marc</a>
-      <a href=" /page5.html">Emirace</a>
+      <a href="/">Home</a>
+      <a href="/majo.html">Majo</a>
+      <a href="/jp.html">Jp</a>
+      <a href="/marc.html">Marc</a>
+      <a href="/emirace.html">Emirace</a>
     </nav>
+
     <main>
-      <h1>Jpanda y sus amigos
-      </h1>
-      <style>
-        h1 {
-          text-align: center;         /* Centra el texto */
-          font-family: Arial, sans-serif; /* Fuente */
-          font-size: 48px;            /* Tamaño del texto */
-          color: #93C572;                /* Color del texto */
-          margin-top: 20px;           /* Espacio superior */
-        }
-      </style>
-    
+      <h1>Jpanda y sus amigos</h1>
+      <h2>Hi! Welcome to our website!</h2>
+      <p>This is a school project at <a class="aesthetic" href="https://www.churchill.edu.mx/">The Churchill School</a> we made to show a little more about who we are — Jpanda, Marc, Majo, and Emirace. On this site, you’ll find our biographies, pictures, hobbies, and some fun facts about each of us.</p>
+      <p>We thought it would be cool to create a place where you can learn more than just our names. You’ll find out what we like to do, what makes us happy, and even some silly or interesting things that make us unique.</p>
+      <p>Each of us has our own part of the site, so you can check out everyone one by one. We hope you have fun looking around and getting to know us better.</p>
+      <h3>Thanks for visiting our page — enjoy!</h3>
     </main>
   </body>
 </html>
